@@ -56,5 +56,38 @@ footer {
     border: solid $color-secondary;
 }
 
+#carouselButton {
+    position: absolute;
+    right: 20px;
+    /* Adjust the distance from the right edge */
+    bottom: 20px;
+    /* Adjust the distance from the bottom edge */
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    border-radius: 50%;
+    /* Round shape */
+    padding: 10px;
+    /* Increase padding for better click area */
+}
+
+#carouselButton button {
+    background-color: transparent;
+    /* Transparent button background */
+    border: none;
+    /* Remove button border */
+    color: #fff;
+    /* Text color */
+    font-size: 24px;
+    /* Adjust font size */
+    cursor: pointer;
+}
+
+#carouselButton button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Hover background color */
+    transition: background-color 0.3s ease-in-out;
+}
+
 @import 'modal';
 @import 'review-section';
